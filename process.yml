@@ -1,0 +1,9 @@
+apps:
+  - name: 'chart-generator-svc'
+    script: './server.js'
+    exec_mode: 'cluster'
+    instances: 2
+    autorestart: true
+    watch: false
+    max_memory_restart: '1G'
+    disable_logs: false

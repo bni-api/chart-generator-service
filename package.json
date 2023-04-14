@@ -1,0 +1,31 @@
+{
+  "name": "chart-generator-svc",
+  "version": "1.0.0",
+  "description": "transaction-svc",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js",
+    "serve": "pm2-runtime start process.yml"
+  },
+  "author": "mail@harismawan.com",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.7.1",
+    "@fastify/cors": "^8.2.1",
+    "@fastify/swagger": "^8.3.1",
+    "@fastify/swagger-ui": "^1.6.0",
+    "chart.js": "^3.9.1",
+    "chartjs-node-canvas": "^4.1.6",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.15.0",
+    "fastify-plugin": "^4.5.0",
+    "pm2": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "engines": {
+    "node" : ">=14.0.0 <15.0.0"
+  }
+}
