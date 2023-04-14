@@ -13,8 +13,6 @@
   "dependencies": {
     "@fastify/autoload": "^5.7.1",
     "@fastify/cors": "^8.2.1",
-    "@fastify/swagger": "^8.3.1",
-    "@fastify/swagger-ui": "^1.6.0",
     "chart.js": "^3.9.1",
     "chartjs-node-canvas": "^4.1.6",
     "dotenv": "^16.0.3",

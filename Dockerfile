@@ -1,9 +1,9 @@
-FROM node:14.19.0-alpine
+FROM node:alpine
 
 ENV APP_PORT=3010
 
-RUN apk --no-cache add curl
-RUN apk --no-cache add python3
+RUN apk --no-cache add python3 make gcc g++ curl
+
 ADD . /app
 WORKDIR /app
 
