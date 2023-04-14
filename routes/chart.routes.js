@@ -43,4 +43,3 @@ const routes = async (app, options) => {
 };
 
 export default routes;
-export const autoPrefix = '/chart';
