@@ -6,18 +6,29 @@ const routes = async (app, options) => {
     method: 'POST',
     url: '/generate',
     schema: {
+      query: {
+        type: 'object',
+        properties: {
+          type: {
+            type: 'string',
+            enum: ['base64', 'image'],
+            default: 'base64'
+          }
+        },
+        additionalProperties: false,
+        required: ['type']
+      },
       body: {
         type: 'object',
         properties: {
           canvas: {
             type: 'object',
             properties: {
-              backgroundColor: { type: 'string' },
               width: { type: 'number' },
               height: { type: 'number' }
             },
             additionalProperties: false,
-            required: ['backgroundColor', 'width', 'height']
+            required: ['width', 'height']
           },
           type: { type: 'string' },
           data: { type: 'object' },
