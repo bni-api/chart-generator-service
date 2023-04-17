@@ -2,8 +2,6 @@ FROM node:14.19.0
 
 ENV APP_PORT=3010
 
-RUN apk --no-cache add python3 make gcc g++ curl
-
 ADD . /app
 WORKDIR /app
 
